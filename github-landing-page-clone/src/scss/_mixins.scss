@@ -1,0 +1,27 @@
+@import "./variables";
+
+@mixin smallNavLinkBtn {
+  border: none;
+  background-color: transparent;
+  color: $main-clr-two;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@mixin largeNavLinkBtn {
+  border: none;
+  background-color: transparent;
+  color: $main-clr-one;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@mixin signUpBtn {
+  border: 1px solid $main-clr-one;
+  background-color: transparent;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: $main-clr-one;
+  font-weight: bold;
+  cursor: pointer;
+}

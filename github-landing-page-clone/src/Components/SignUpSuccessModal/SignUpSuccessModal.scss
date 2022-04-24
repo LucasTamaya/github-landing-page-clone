@@ -1,0 +1,26 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.successMessage {
+  position: absolute;
+  bottom: 20px;
+  color: $main-clr-one;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: $main-clr-six;
+  padding: 15px;
+  border-radius: 5px;
+  animation: transitionIn 0.5s ease forwards;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+
+  to {
+    opacity: 1;
+    left: 50px;
+  }
+}
