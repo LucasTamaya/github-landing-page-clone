@@ -28,8 +28,10 @@ code {
     monospace;
 }
 
-h2{
+h2 {
   font-size: 1.7rem;
+  color: $main-clr-two;
+  text-align: center;
 }
 
 h3 {
@@ -40,6 +42,6 @@ h4 {
   font-size: 1.1rem;
 }
 
-h5{
+h5 {
   font-size: 0.9rem;
 }
