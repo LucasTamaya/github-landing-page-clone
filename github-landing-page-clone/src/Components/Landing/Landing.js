@@ -1,5 +1,6 @@
 import React from "react";
 import BuildOnGitHub from "../BuildOnGitHub/BuildOnGitHub";
+import Community from "../Community/Community";
 
 import GetStarted from "../GetStarted/GetStarted";
 import GitHubFreeForTeams from "../GitHubFreeForTeams/GitHubFreeForTeams";
@@ -24,6 +25,7 @@ function Landing() {
         <LeadingCompanies />
         <SecurityAndAdministration />
         <BuildOnGitHub />
+        <Community />
       </div>
     </>
   );
