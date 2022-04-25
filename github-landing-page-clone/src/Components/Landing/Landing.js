@@ -1,4 +1,5 @@
 import React from "react";
+import BuildOnGitHub from "../BuildOnGitHub/BuildOnGitHub";
 
 import GetStarted from "../GetStarted/GetStarted";
 import GitHubFreeForTeams from "../GitHubFreeForTeams/GitHubFreeForTeams";
@@ -22,6 +23,7 @@ function Landing() {
         <LearnAbout />
         <LeadingCompanies />
         <SecurityAndAdministration />
+        <BuildOnGitHub />
       </div>
     </>
   );
