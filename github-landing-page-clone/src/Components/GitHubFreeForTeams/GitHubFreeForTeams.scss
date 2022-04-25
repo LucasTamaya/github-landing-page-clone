@@ -1,0 +1,65 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.gitHubFree {
+  background-color: $main-clr-nine;
+  border-radius: 5px;
+  padding: 25px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+  }
+
+  &__new {
+    color: $main-clr-six;
+    border: 1px solid $main-clr-six;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 2px 5px;
+  }
+
+  &__title {
+    color: $main-clr-one;
+  }
+
+  &__para {
+    color: $main-clr-one;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    @include ctaBlueBtnFilled;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .gitHubFree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+
+    &__info {
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 480px;
+      column-gap: 15px;
+    }
+
+    &__new {
+      margin-top: 5px;
+    }
+
+    &__para {
+      margin: 0;
+    }
+
+    &__btn {
+      max-width: 280px;
+    }
+  }
+}

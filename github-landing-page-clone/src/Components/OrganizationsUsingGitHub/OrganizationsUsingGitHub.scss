@@ -1,0 +1,45 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.organizations {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+
+  &__para {
+    @include infoPara;
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 45px;
+    row-gap: 20px;
+    max-width: 700px;
+
+    img {
+      width: 50px;
+      object-fit: contain;
+      filter: grayscale(100%);
+    }
+  }
+}
+
+#googleLogo,
+#swiftLogo,
+#facebookLogo,
+#nasaLogo {
+  width: 30px;
+}
+
+@media screen and (min-width: 1224px) {
+  .organizations {
+    &__logos {
+      max-width: 900px;
+      column-gap: 80px;
+    }
+  }
+}

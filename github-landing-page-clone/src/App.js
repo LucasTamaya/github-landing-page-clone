@@ -1,10 +1,10 @@
-import Header from "./Components/Header/Header";
+import Landing from "./Components/Landing/Landing";
 
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <Landing />
+    </>
   );
 }
 
