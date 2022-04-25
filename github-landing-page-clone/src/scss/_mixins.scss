@@ -50,3 +50,9 @@
   line-height: 25px;
   color: $main-clr-four;
 }
+
+@mixin learnAboutPara {
+  text-align: left;
+  font-size: 0.7rem;
+  color: $main-clr-two;
+}
