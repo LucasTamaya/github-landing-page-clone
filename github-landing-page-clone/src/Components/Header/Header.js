@@ -4,7 +4,6 @@ import Nav from "../Nav/Nav";
 import SignUpForm from "../SignUpForm/SignUpForm";
 
 import "./Header.scss";
-import logo from "../../assets/images/contribution-graph.svg"
 
 function Header() {
   // Detect on small screen

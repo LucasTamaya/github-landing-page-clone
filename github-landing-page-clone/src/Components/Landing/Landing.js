@@ -4,6 +4,7 @@ import Community from "../Community/Community";
 
 import GetStarted from "../GetStarted/GetStarted";
 import GitHubFreeForTeams from "../GitHubFreeForTeams/GitHubFreeForTeams";
+import GitHubStats from "../GitHubStats/GitHubStats";
 import Header from "../Header/Header";
 import LeadingCompanies from "../LeadingCompanies/LeadingCompanies";
 import LearnAbout from "../LearnAbout/LearnAbout";
@@ -26,6 +27,7 @@ function Landing() {
         <SecurityAndAdministration />
         <BuildOnGitHub />
         <Community />
+        <GitHubStats />
       </div>
     </>
   );

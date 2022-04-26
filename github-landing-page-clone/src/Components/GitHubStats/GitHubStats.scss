@@ -1,0 +1,100 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.gitHubStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  row-gap: 25px;
+
+  &__dataNb {
+    color: $main-clr-one;
+    font-weight: bold;
+    font-size: 1.7rem;
+
+    &::after {
+      content: "*";
+    }
+  }
+
+  &__dataText {
+    color: $main-clr-one;
+    font-size: 0.8rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+  }
+
+  &__para {
+    color: $main-clr-two;
+    font-size: 0.7rem;
+    max-width: 225px;
+  }
+
+  &__date {
+    color: $main-clr-four;
+    text-align: left;
+    width: 100%;
+    max-width: 268px;
+    margin-top: 25px;
+
+    &::before {
+      content: "*";
+    }
+  }
+}
+
+.gitHubStats__orange {
+  @include statCircle($orange-clr, 180px);
+
+  &__span {
+    color: $orange-clr;
+  }
+}
+
+.gitHubStats__blue {
+  @include statCircle($main-clr-five, 140px);
+
+  &__span {
+    color: $main-clr-five;
+  }
+}
+
+.gitHubStats__purple {
+  @include statCircle($purple-clr, 120px);
+
+  &__span {
+    color: $purple-clr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gitHubStats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 25px;
+
+    &__circles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 25px;
+    }
+
+    &__infoContainer {
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__date{
+      margin: 0;
+    }
+  }
+}

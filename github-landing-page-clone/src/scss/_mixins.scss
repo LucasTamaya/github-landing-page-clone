@@ -56,3 +56,14 @@
   font-size: 0.7rem;
   color: $main-clr-two;
 }
+
+@mixin statCircle($bgClr, $dimension) {
+  background-color: $bgClr;
+  width: $dimension;
+  height: $dimension;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
