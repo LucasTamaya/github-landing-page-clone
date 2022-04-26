@@ -1,21 +1,10 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
 import MediaQuery from "react-responsive";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import "./GitHubStats.scss";
 
 function GitHubStats() {
-  // Detect on small screen
-  const isSmallScreen = useMediaQuery({
-    query: "(max-width: 1023px)",
-  });
-
-  // Detect on large screen
-  const isLargeScreen = useMediaQuery({
-    query: "(min-width: 1024px)",
-  });
-
   return (
     <div className="gitHubStats" data-testid="gitHubStats">
       <MediaQuery maxWidth={1023}>

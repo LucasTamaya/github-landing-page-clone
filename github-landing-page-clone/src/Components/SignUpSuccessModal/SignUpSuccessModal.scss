@@ -2,18 +2,37 @@
 @import "../../scss/variables";
 
 .successMessage {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   color: $main-clr-one;
   font-size: 0.9rem;
   font-weight: bold;
-  background-color: $main-clr-six;
+  background-color: $green-clr;
   padding: 15px;
   border-radius: 5px;
-  animation: transitionIn 0.5s ease forwards;
+  animation: transitionInSm 0.5s ease forwards;
 }
 
-@keyframes transitionIn {
+@media screen and (min-width: 768px) {
+  .successMessage {
+    animation: transitionInLg 0.5s ease forwards;
+  }
+}
+
+@keyframes transitionInSm {
+  from {
+    opacity: 0;
+    left: -50px;
+  }
+
+  to {
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes transitionInLg {
   from {
     opacity: 0;
     left: -50px;

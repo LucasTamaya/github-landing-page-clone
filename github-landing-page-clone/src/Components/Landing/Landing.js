@@ -1,4 +1,5 @@
 import React from "react";
+import BottomSignUpForm from "../BottomSignUpForm/BottomSignUpForm";
 import BuildOnGitHub from "../BuildOnGitHub/BuildOnGitHub";
 import Community from "../Community/Community";
 
@@ -28,6 +29,7 @@ function Landing() {
         <BuildOnGitHub />
         <Community />
         <GitHubStats />
+        <BottomSignUpForm />
       </div>
     </>
   );

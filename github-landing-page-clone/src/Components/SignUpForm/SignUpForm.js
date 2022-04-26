@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import SignUpSuccessModal from "../SignUpSuccessModal/SignUpSuccessModal";
 import "./SignUpForm.scss";
+import SignUpSuccessModal from "../SignUpSuccessModal/SignUpSuccessModal";
 import signUpValidationSchema from "../../FormValidationSchema/signUpValidationSchema";
 
 function SignUpForm() {
