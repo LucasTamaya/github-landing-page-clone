@@ -8,9 +8,8 @@
   row-gap: 15px;
   margin-top: 80px;
 
-  &__span {
-    color: $main-clr-four;
-    font-size: 0.9rem;
+  &__miniTitle {
+    @include sectionMiniTitle;
   }
 
   &__title {

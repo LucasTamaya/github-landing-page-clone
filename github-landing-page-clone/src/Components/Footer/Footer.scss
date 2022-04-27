@@ -1,0 +1,96 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.footer {
+  margin-top: 40px;
+  padding-bottom: 30px;
+
+  &__github {
+    color: $main-clr-two;
+    font-weight: bold;
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__nav {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    columns: 25px;
+    row-gap: 35px;
+    margin-bottom: 80px;
+    justify-content: center;
+  }
+
+  &__title {
+    @include sectionMiniTitle;
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    button {
+      @include footerLink;
+    }
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  &__social {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    &__icon {
+      color: $main-clr-four;
+      cursor: pointer;
+    }
+  }
+
+  &__copyrights {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 8px;
+
+    span {
+      color: $main-clr-two;
+    }
+
+    button {
+      @include footerLink;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    &__top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &__bottom {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  .footer__nav {
+    &__container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      width: 80%;
+    }
+  }
+}

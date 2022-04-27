@@ -36,7 +36,8 @@
   }
 
   &__date {
-    color: $main-clr-four;
+    @include sectionMiniTitle;
+    font-size: 0.7rem;
     text-align: left;
     width: 100%;
     max-width: 268px;

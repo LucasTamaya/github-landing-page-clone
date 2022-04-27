@@ -6,7 +6,7 @@ import "./WorkTogether.scss";
 function WorkTogether() {
   return (
     <div className="workTogether" data-testid="workTogether">
-      <span className="workTogether__span">GitHub for teams</span>
+      <span className="workTogether__miniTitle">GitHub for teams</span>
 
       <h2 className="workTogether__title">A better way to work together</h2>
 

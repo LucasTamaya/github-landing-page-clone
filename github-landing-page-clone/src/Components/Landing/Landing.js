@@ -2,6 +2,7 @@ import React from "react";
 import BottomSignUpForm from "../BottomSignUpForm/BottomSignUpForm";
 import BuildOnGitHub from "../BuildOnGitHub/BuildOnGitHub";
 import Community from "../Community/Community";
+import Footer from "../Footer/Footer";
 
 import GetStarted from "../GetStarted/GetStarted";
 import GitHubFreeForTeams from "../GitHubFreeForTeams/GitHubFreeForTeams";
@@ -18,7 +19,7 @@ function Landing() {
   return (
     <>
       <Header />
-      <div className="appContainer">
+      <div className="mainContainer">
         <GetStarted />
         <GitHubFreeForTeams />
         <OrganizationsUsingGitHub />
@@ -29,7 +30,10 @@ function Landing() {
         <BuildOnGitHub />
         <Community />
         <GitHubStats />
-        <BottomSignUpForm />
+      </div>
+      <BottomSignUpForm />
+      <div className="mainContainer">
+        <Footer />
       </div>
     </>
   );

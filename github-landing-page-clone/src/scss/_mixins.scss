@@ -1,5 +1,10 @@
 @import "./variables";
 
+@font-face {
+  font-family: "Consolas";
+  src: url("../assets/fonts/CONSOLA.TTF") format("truetype");
+}
+
 @mixin smallNavLinkBtn {
   border: none;
   background-color: transparent;
@@ -62,6 +67,12 @@
   color: $main-clr-five;
 }
 
+@mixin sectionMiniTitle{
+  font-family: "Consolas";
+  font-size: 0.9rem;
+  color: $main-clr-four;
+}
+
 @mixin infoPara {
   text-align: center;
   font-size: 0.9rem;
@@ -71,7 +82,8 @@
 
 @mixin learnAboutPara {
   text-align: left;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 18px;
   color: $main-clr-two;
 }
 
@@ -84,4 +96,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin footerLink {
+  border: none;
+  background-color: transparent;
+  color: $main-clr-two;
+  font-size: 0.7rem;
+  cursor: pointer;
 }

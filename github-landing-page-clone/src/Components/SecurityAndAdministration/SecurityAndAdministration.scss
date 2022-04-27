@@ -8,9 +8,8 @@
   row-gap: 15px;
   margin-top: 80px;
 
-  &__span {
-    color: $main-clr-four;
-    font-size: 0.9rem;
+  &__miniTitle {
+    @include sectionMiniTitle;
   }
 
   &__title {
@@ -61,7 +60,8 @@
   &__para {
     color: $main-clr-four;
     margin-bottom: 35px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    line-height: 18px;
     max-width: 380px;
   }
 }
@@ -78,12 +78,14 @@
 
   &__title {
     color: $main-clr-two;
+    margin-bottom: 10px;
   }
 
   &__para {
     color: $main-clr-four;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-bottom: 15px;
+    line-height: 18px;
     max-width: 310px;
   }
 

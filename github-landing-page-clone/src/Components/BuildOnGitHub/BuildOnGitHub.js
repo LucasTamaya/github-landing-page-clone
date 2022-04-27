@@ -13,7 +13,7 @@ import codeClimateLogo from "../../assets/images/codeclimate.png";
 function BuildOnGitHub() {
   return (
     <div className="buildOnGitHub" data-testid="buildOnGitHub">
-      <span className="buildOnGitHub__span">Integrations</span>
+      <span className="buildOnGitHub__miniTitle">Integrations</span>
 
       <h2 className="buildOnGitHub__title">Build on GitHub</h2>
 

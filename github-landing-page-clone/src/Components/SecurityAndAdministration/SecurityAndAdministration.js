@@ -8,7 +8,7 @@ import businessImg from "../../assets/images/business.png";
 function SecurityAndAdministration() {
   return (
     <div className="securityAdmin" data-testid="securityAdmin">
-      <span className="securityAdmin__span">Security and administration</span>
+      <span className="securityAdmin__miniTitle">Security and administration</span>
       <h2 className="securityAdmin__title">Your business needs, met</h2>
       <p className="securityAdmin__para">
         From flexible hosting ti granular access controls, we've got your
@@ -50,9 +50,9 @@ function SecurityAndAdministration() {
             sx={{ fontSize: 40 }}
           />
           <div>
-            <h5 className="securityAdmin__services__three__title">
+            <h3 className="securityAdmin__services__three__title">
               Hosted where you need it
-            </h5>
+            </h3>
             <p className="securityAdmin__services__three__para">
               Securely and reliably host your work on GitHub using GitHub
               Enterprise Cloud. Or deploy GitHub Enterprise Server in your own
